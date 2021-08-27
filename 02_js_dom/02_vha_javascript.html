@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Titel</h1>
+		</header>
+		<main>
+			<h2>Undertitel</h2>
+			<section id="firstsection">
+				<article>
+					<img src="https://placeimg.com/640/480/any" alt="billede1" />
+					<h3>Article 1</h3>
+					<p>
+						Nr. 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+						aliquet pulvinar metus a suscipit. Aliquam erat volutpat. Nam
+						faucibus dictum eros at aliquet. Etiam ut risus id risus tristique
+						euismod. Nullam accumsan felis eleifend, tincidunt quam eu,
+						consequat dui. Proin sit amet suscipit est. Pellentesque habitant
+						morbi tristique senectus et netus et malesuada fames ac turpis
+						egestas. Praesent vitae faucibus augue. Aenean ultrices metus eget
+						mauris ultrices blandit. Aenean egestas ante eget urna molestie, ac
+						suscipit mauris faucibus. In convallis risus a risus dignissim
+						consequat non at justo. Maecenas vitae auctor sapien. Morbi sem
+						lacus, mollis eu maximus vitae, mattis in dui.
+					</p>
+				</article>
+
+				<article>
+					<img src="https://placeimg.com/640/480/any" alt="billede2" />
+					<h3>Article 2</h3>
+					<p>
+						Nr. 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+						aliquet pulvinar metus a suscipit. Aliquam erat volutpat. Nam
+						faucibus dictum eros at aliquet. Etiam ut risus id risus tristique
+						euismod. Nullam accumsan felis eleifend, tincidunt quam eu,
+						consequat dui. Proin sit amet suscipit est. Pellentesque habitant
+						morbi tristique senectus et netus et malesuada fames ac turpis
+						egestas. Praesent vitae faucibus augue. Aenean ultrices metus eget
+						mauris ultrices blandit. Aenean egestas ante eget urna molestie, ac
+						suscipit mauris faucibus. In convallis risus a risus dignissim
+						consequat non at justo. Maecenas vitae auctor sapien. Morbi sem
+						lacus, mollis eu maximus vitae, mattis in dui.
+					</p>
+				</article>
+			</section>
+			<footer>
+				<p>This is the footer</p>
+			</footer>
+		</main>
+
+		<script>
+			// Disse to giver samme resultat. Det er dog nemmest med nth-child(1) eler nth-child(2)
+
+			// let article = document.querySelector("article:nth-child(1)");
+			// console.log(article);
+
+			let article1 = document.querySelector("article:nth-child(1)");
+
+			article1.innerHTML =
+				"<h1>Det her er fed tekst</h1> <p>Her er endnu mere</p>";
+
+			let article2 = document.querySelector("article:nth-child(2)");
+
+			article2.innerHTML =
+				"<h1>Det her er noget tekst</h1> <p>Her er noget mere</p>";
+
+			// const title = document.querySelector("header, h1");
+			// const img2 = document.querySelector("article:nth-child(2) img");
+			// const articleHeading = document.querySelector("article:nth-child(2) h3");
+
+			// let body = document.querySelector("body");
+			// console.log(body);
+			// let header = document.querySelector("header");
+			// let img = document.querySelector("img");
+			// let artikel = document.querySelector("article");
+			// let h1 = document.querySelector("h1");
+			// let h2 = document.querySelector("h2");
+			// let h3 = document.querySelector("h3");
+			// let footer = document.querySelector("footer");
+		</script>
+	</body>
+</html>
